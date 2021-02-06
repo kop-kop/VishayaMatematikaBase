@@ -109,3 +109,11 @@ def rand_name(length_name=0):
                 res = res + ae[randint(1, max_index_ae)]
     res = bc[randint(1, max_index_bc)].upper() + ae[randint(1, max_index_ae)] + res
     return res
+
+def round_to_a_multiple (val, base=5):
+    """
+    Возвращает число ближайшее кратное base по отношению к val
+    :param val: float, base: int
+    :return: int
+    """
+    return int(round(val / base) * base)
